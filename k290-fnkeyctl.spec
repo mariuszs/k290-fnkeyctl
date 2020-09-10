@@ -1,5 +1,5 @@
 Name:           k290-fnkeyctl
-Version:        1.2
+Version:        1.2.1
 Release:        1%{?dist}
 Summary:        Configures the behaviour of the F-keys on the Logitech K290
 
@@ -32,8 +32,5 @@ install -m 644 99-k290-config.rules %{buildroot}/lib/udev/rules.d/
 %{_bindir}/lib/udev/rules.d/99-k290-config.rules
 
 %changelog
-* Thu Sep 10 2020 Mariusz Smykula <mariuszs@gmail.com> 1.2-1
-- new package built with tito
-
 * Thu Nov  5 2015 Mariusz Smykuła
 - Initial rpm version
