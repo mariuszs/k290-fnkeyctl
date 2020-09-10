@@ -1,13 +1,14 @@
 Name:           k290-fnkeyctl
-Version:        1.1
+Version:        1.2
 Release:        1%{?dist}
 Summary:        Configures the behaviour of the F-keys on the Logitech K290
 
 License:        MIT
-URL:            https://github.com/milgner/k290-fnkeyctl
-Source0:        https://github.com/milgner/k290-fnkeyctl/archive/v1.1.tar.gz
+URL:            https://github.com/mariuszs/k290-fnkeyctl
+Source0:        https://github.com/mariuszs/k290-fnkeyctl/archive/v1.2.tar.gz
 
 BuildRequires:  libusbx-devel
+BuildRequires:  gcc-c++
 
 %description
 Configures the behaviour of the F-keys on the Logitech K290
