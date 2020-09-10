@@ -24,6 +24,7 @@ Configures the behaviour of the F-keys on the Logitech K290
 make
 
 %install
+mkdir -p %{buildroot}/usr/local/sbin/
 cp k290_fnkeyctl %{buildroot}/usr/local/sbin/
 
 mkdir -p %{buildroot}/lib/udev/rules.d/
