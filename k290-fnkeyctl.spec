@@ -31,8 +31,8 @@ mkdir -p %{buildroot}/lib/udev/rules.d/
 cp 99-k290-config.rules %{buildroot}/lib/udev/rules.d/
 
 %files
-%attr(755,root,root) %{_bindir}/usr/local/sbin/k290_fnkeyctl
-%attr(644,root,root) %{_bindir}/lib/udev/rules.d/99-k290-config.rules
+%attr(755,root,root) /usr/local/sbin/k290_fnkeyctl
+%attr(644,root,root) /lib/udev/rules.d/99-k290-config.rules
 
 %changelog
 * Thu Sep 10 2020 Mariusz Smykula <mariuszs@gmail.com> 1.2.1-1
