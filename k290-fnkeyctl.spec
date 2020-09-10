@@ -9,6 +9,8 @@ URL:            https://github.com/mariuszs/k290-fnkeyctl
 BuildRequires:  libusbx-devel
 BuildRequires:  gcc-c++
 
+Source0: %{name}-%{version}.tar.gz
+
 Requires(post): info
 Requires(preun): info
 
