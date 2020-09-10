@@ -24,14 +24,14 @@ Configures the behaviour of the F-keys on the Logitech K290
 make
 
 %install
-make DESTDIR=%{?buildroot} install
-mkdir -p %{buildroot}/lib/udev/rules.d/
+cp k290_fnkeyctl %{buildroot}/usr/local/sbin/
 
-install -m 644 99-k290-config.rules %{buildroot}/lib/udev/rules.d/
+mkdir -p %{buildroot}/lib/udev/rules.d/
+cp 99-k290-config.rules %{buildroot}/lib/udev/rules.d/
 
 %files
-%{_bindir}/usr/local/sbin/k290_fnkeyctl
-%{_bindir}/lib/udev/rules.d/99-k290-config.rules
+%attr(755,root,root) %{_bindir}/usr/local/sbin/k290_fnkeyctl
+%attr(644,root,root) %{_bindir}/lib/udev/rules.d/99-k290-config.rules
 
 %changelog
 * Thu Sep 10 2020 Mariusz Smykula <mariuszs@gmail.com> 1.2.1-1
