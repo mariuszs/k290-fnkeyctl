@@ -4,4 +4,4 @@ k290_fnkeyctl
 *.tar.*
 pkg/
 src/
-
+.idea/
