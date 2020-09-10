@@ -3,7 +3,7 @@ CFLAGS = -std=gnu++0x
 PREFIX = /usr/local
 
 k290_fnkeyctl: k290_fnkeyctl.cpp
-	${CC} ${CFLAGS} k290_fnkeyctl.cpp `pkg-config --libs libusb-1.0` -o k290_fnkeyctl
+	${CC} ${CFLAGS} -g k290_fnkeyctl.cpp `pkg-config --libs libusb-1.0` -o k290_fnkeyctl
 
 clean:
 	rm k290_fnkeyctl
